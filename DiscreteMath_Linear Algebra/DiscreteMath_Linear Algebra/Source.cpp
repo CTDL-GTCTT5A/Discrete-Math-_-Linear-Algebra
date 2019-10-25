@@ -25,9 +25,10 @@ int main()
 			<< "\t3. Solve Matrix Problem.\n"
 			<< "\t0. To exit.\n"
 			<< "_________________________________________________\n"
-			<< "\t+ You choose ? ";
+			<< "\t+ You choose :  ";
 
 		cin >> choose;
+		system("cls");
 
 		switch (choose)
 		{
