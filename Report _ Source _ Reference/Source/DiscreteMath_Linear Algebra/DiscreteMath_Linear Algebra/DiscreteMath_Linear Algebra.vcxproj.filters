@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\KarnaughMap">
+      <UniqueIdentifier>{a3fb1b28-649e-4551-9bfc-ffcfb26c44d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\KarnaughMap">
+      <UniqueIdentifier>{b61aab9e-71f6-4e12-8c84-99840f23cbbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Vector">
+      <UniqueIdentifier>{5c94097f-1f1a-4c5e-a941-1c93b9eed911}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CalculateMatrix">
+      <UniqueIdentifier>{e3f556d0-1fa3-4352-a186-d16d9b6f87e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Vector">
+      <UniqueIdentifier>{8002c837-3ab0-4139-849b-4312072e53eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\CalculateMatrix">
+      <UniqueIdentifier>{c0e8689c-0d91-4591-abdc-e22101fdcce8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KarnaughMap\MapGuild.h">
+      <Filter>Header Files\KarnaughMap</Filter>
+    </ClInclude>
+    <ClInclude Include="KarnaughMap\McCluskeyAlgorithm.h">
+      <Filter>Header Files\KarnaughMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\Vector.h">
+      <Filter>Header Files\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculateMatrix\Matrix.h">
+      <Filter>Header Files\CalculateMatrix</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KarnaughMap\McCluskeyAlgorithm.cpp">
+      <Filter>Resource Files\KarnaughMap</Filter>
+    </ClCompile>
+    <ClCompile Include="KarnaughMap\MapGuild.cpp">
+      <Filter>Resource Files\KarnaughMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector\Vector.cpp">
+      <Filter>Resource Files\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculateMatrix\Matrix.cpp">
+      <Filter>Resource Files\CalculateMatrix</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

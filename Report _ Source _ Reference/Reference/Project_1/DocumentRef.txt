@@ -1,0 +1,8 @@
+
+Documentary reference:
+
++ Website: https://en.wikipedia.org/wiki/Quine%E2%80%93McCluskey_algorithm
+	   https://www.tutorialspoint.com/digital_circuits/digital_circuits_quine_mccluskey_tabular_method.htm
+	   https://www.researchgate.net/publication/265898324_Quine-McCluskey_algorithm_on_GPGPU
+
++ Youtube: https://www.youtube.com/watch?v=l1jgq0R5EwQ
