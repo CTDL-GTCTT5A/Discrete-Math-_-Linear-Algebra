@@ -560,9 +560,8 @@ string Tostring(int n)
 //Đây là hàm hộ trợ tìm nghiệm sau khi chuyển về ma trận bậc thang
 void TimNghiem(double** matrix, int dong, int cot)
 {
-
-	int rank = DemSoDongKhac0(matrix, dong, dong);
-
+	
+	int rank = DemSoDongKhac0(matrix, dong, cot-1);
 	//_______________________________________________________________________________ TRƯỜNG HỢP HỆ CÓ DUY VÔ NGHIỆM_______________________________________________________________________________
 
 	if (rank < dong && matrix[dong - 1][cot - 1] != 0)
@@ -599,7 +598,7 @@ void TimNghiem(double** matrix, int dong, int cot)
 			}
 		}
 		for (int i = 0; i < n; i++)
-			cout << a[i] << "\t";
+			cout << "x" << i+1 << "="<< a[n-i-1] << "\n";
 		delete[] a;
 	}
 
@@ -856,24 +855,14 @@ void Matrix::InRaNghiem()
 	//Gọi hàm thay đổi thứ tự các dòng
 	SwapLine(matrixtemp, row, col);
 
-
+	
 	//Gọi hàm chuyển về ma trận bậc thang
 	matrixtemp = ChuyenVeBacThang(matrixtemp, pt+cloneDong0, sobien+1);
-	/*for (int i = 0; i < pt + cloneDong0; i++)
-	{
-		for (int j = 0; j < sobien + 1; j++)
-		{
-			cout << matrixtemp[i][j] << "\t";
-		}
-		cout << endl;
-	}*/
 
-	
 
 	//Tìm nghiệm:
 	TimNghiem(matrixtemp, pt+cloneDong0 , sobien+1);
 
-	
 	
 }
 
@@ -881,6 +870,7 @@ void Matrix::InRaNghiem()
 void Matrix::MainMenu()
 {
 	int select;
+	Matrix temp;
 	while (1)
 	{
 		system("cls");
@@ -890,9 +880,11 @@ void Matrix::MainMenu()
 		cout << "1.Nhap ma tran - Input" << endl;
 		cout << "2.Xuat ma tran - Ouput" << endl;
 		cout << "3.Tinh Dinh thuc - Determinant " << endl;
-		cout << "4.Nghich dao cua ma tran - Inverse" << endl;
-		cout << "5.Hang cua ma tran - Rank" << endl;
-		cout << "6.Giai he phuong trinh tuyen tinh - Solve linear equations" << endl;
+		cout << "4.Tich cua hai ma tran" << endl;
+		cout << "5.Nghich dao cua ma tran - Inverse" << endl;
+		cout << "6.Hang cua ma tran - Rank" << endl;
+		cout << "7.Giai he phuong trinh tuyen tinh - Solve linear equations" << endl;
+		cout << "0.Exit" << endl;
 		cout << "\n+Your select : ";
 		cin >> select;
 		switch (select)
@@ -915,9 +907,13 @@ void Matrix::MainMenu()
 			}
 			break;
 		case 4:
+			cout << "Nhap vao ma tran b : " << endl;
+			cin >> temp;
+			cout << *this * temp;
+			break;
+		case 5:
 			if (cap != 0)
 			{
-				cout << "Ma tran nghich dao(Kha nghich) co dang : " << endl;
 				cout << inverse();
 			}
 			else
@@ -925,11 +921,11 @@ void Matrix::MainMenu()
 				cout << "[ERROR] Ma tran nghich dao phai la mot ma tran vuong." << endl;
 			}
 			break;
-		case 5:
+		case 6:
 			cout << "Hang cua ma tran la : ";
 			cout << Rank();
 			break;
-		case 6:
+		case 7:
 			InRaNghiem();
 			break;
 		default:

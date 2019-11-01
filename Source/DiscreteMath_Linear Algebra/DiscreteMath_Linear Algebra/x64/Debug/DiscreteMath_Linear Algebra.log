@@ -1,0 +1,11 @@
+﻿  Matrix.cpp
+C:\Users\Admin\Desktop\Discrete-Math-_-Linear-Algebra-Complete\Source\DiscreteMath_Linear Algebra\DiscreteMath_Linear Algebra\CalculateMatrix\Matrix.cpp(248,16): warning C4101: 't': unreferenced local variable
+C:\Users\Admin\Desktop\Discrete-Math-_-Linear-Algebra-Complete\Source\DiscreteMath_Linear Algebra\DiscreteMath_Linear Algebra\CalculateMatrix\Matrix.cpp(380,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Admin\Desktop\Discrete-Math-_-Linear-Algebra-Complete\Source\DiscreteMath_Linear Algebra\DiscreteMath_Linear Algebra\CalculateMatrix\Matrix.cpp(496,10): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Admin\Desktop\Discrete-Math-_-Linear-Algebra-Complete\Source\DiscreteMath_Linear Algebra\DiscreteMath_Linear Algebra\CalculateMatrix\Matrix.cpp(497,10): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Admin\Desktop\Discrete-Math-_-Linear-Algebra-Complete\Source\DiscreteMath_Linear Algebra\DiscreteMath_Linear Algebra\CalculateMatrix\Matrix.cpp(577,43): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Admin\Desktop\Discrete-Math-_-Linear-Algebra-Complete\Source\DiscreteMath_Linear Algebra\DiscreteMath_Linear Algebra\CalculateMatrix\Matrix.cpp(596,32): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Admin\Desktop\Discrete-Math-_-Linear-Algebra-Complete\Source\DiscreteMath_Linear Algebra\DiscreteMath_Linear Algebra\CalculateMatrix\Matrix.cpp(713,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Admin\Desktop\Discrete-Math-_-Linear-Algebra-Complete\Source\DiscreteMath_Linear Algebra\DiscreteMath_Linear Algebra\CalculateMatrix\Matrix.cpp(744,32): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Admin\Desktop\Discrete-Math-_-Linear-Algebra-Complete\Source\DiscreteMath_Linear Algebra\DiscreteMath_Linear Algebra\CalculateMatrix\Matrix.cpp(762,39): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+  DiscreteMath_Linear Algebra.vcxproj -> C:\Users\Admin\Desktop\Discrete-Math-_-Linear-Algebra-Complete\Source\DiscreteMath_Linear Algebra\x64\Debug\DiscreteMath_Linear Algebra.exe
